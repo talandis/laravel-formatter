@@ -1,3 +1,7 @@
+## Attention!
+This fork was made to support '@attributes' in xml, so that nodes (xml tags) could support attributes. _Any credits should go to the original author of this bundle._
+**Use at your own risk!**
+
 Formatter Bundle
 ================
 
@@ -14,7 +18,7 @@ See Parsers and Formats to see supported input / output formats.
 Through command line:
 
 ```bash
-composer require soapbox/laravel-formatter
+composer require danielFurmanov/laravel-formatter
 ```
 
 Through composer.json:
@@ -22,7 +26,7 @@ Through composer.json:
 ```json
 {
   "require": {
-    "soapbox/laravel-formatter": "2.x"
+	"danielFurmanov/laravel-formatter": "2.*",
   }
 }
 
