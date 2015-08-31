@@ -68,34 +68,43 @@ abstract class Parser {
 		}
 
 		foreach ($data as $key => $value) {
-			// convert our booleans to 0/1 integer values so they are
-			// not converted to blanks.
-			if (is_bool($value)) {
-				$value = (int) $value;
-			}
-
-			// no numeric keys in our xml please!
-			if (is_numeric($key)) {
-				// make string key...
-				$key = (Str::singular($basenode) != $basenode) ? Str::singular($basenode) : 'item';
-			}
-
-			// replace anything not alpha numeric
-			$key = preg_replace('/[^a-z_\-0-9]/i', '', $key);
-
-			// if there is another array found recrusively call this function
-			if (is_array($value) or is_object($value)) {
-				$node = $structure->addChild($key);
-
-				// recursive call if value is not empty
-				if (!empty($value)) {
-					$this->xmlify($value, $node, $key);
+			// checking for xml tag having attributes
+			if ($key === '@attributes') {//STRICT IS NECESSARY because if key is numeric @attributes will be cast to integer and 0 == 0!
+				foreach ($data[$key] as $attrName => $attrValue) {
+					$structure->addAttribute($attrName, $attrValue);
 				}
-			} else {
-				// add single node.
-				$value = htmlspecialchars(html_entity_decode($value, ENT_QUOTES, 'UTF-8'), ENT_QUOTES, "UTF-8");
+			}
+			else {
+				// convert our booleans to 0/1 integer values so they are
+				// not converted to blanks.
+				if (is_bool($value)) {
+					$value = (int) $value;
+				}
 
-				$structure->addChild($key, $value);
+				// no numeric keys in our xml please!
+				if (is_numeric($key)) {
+					// make string key...
+					$key = (Str::singular($basenode) != $basenode) ? Str::singular($basenode) : 'item';
+				}
+
+				// replace anything not alpha numeric AND '@' because of '@attributes'
+				$key = preg_replace('/[^a-z_@\-0-9]/i', '', $key);
+
+				// if there is another array found recrusively call this function
+				if (is_array($value) or is_object($value)) {
+					$node = $structure->addChild($key);
+
+					// recursive call if value is not empty
+					if ( ! empty($value)) {
+						$this->xmlify($value, $node, $key);
+					}
+				}
+				else {
+					// add single node.
+					$value = htmlspecialchars(html_entity_decode($value, ENT_QUOTES, 'UTF-8'), ENT_QUOTES, "UTF-8");
+
+					$structure->addChild($key, $value);
+				}
 			}
 		}
 
