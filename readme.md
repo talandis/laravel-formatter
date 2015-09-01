@@ -18,7 +18,7 @@ See Parsers and Formats to see supported input / output formats.
 Through command line:
 
 ```bash
-composer require danielFurmanov/laravel-formatter
+composer require daniel-furmanov/laravel-formatter
 ```
 
 Through composer.json:
@@ -26,7 +26,7 @@ Through composer.json:
 ```json
 {
   "require": {
-	"danielFurmanov/laravel-formatter": "2.*",
+	"daniel-furmanov/laravel-formatter": "dev-master",
   }
 }
 
