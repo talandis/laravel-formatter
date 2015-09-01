@@ -20,7 +20,7 @@ class FormatterServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
-		$this->package('DanielFurmanov/laravel-formatter');
+		$this->package('daniel-furmanov/laravel-formatter');
 	}
 
 	/**

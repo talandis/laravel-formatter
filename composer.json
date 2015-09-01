@@ -1,5 +1,5 @@
 {
-	"name": "DanielFurmanov/laravel-formatter",
+	"name": "daniel-furmanov/laravel-formatter",
 	"type": "library",
 	"description": "A formatting library that converts data output between XML, CSV, JSON, TXT, YAML and a few others. And supports @attributes in XML",
 	"keywords": ["laravel", "formatter", "data", "convert", "csv", "xml", "yaml"],
