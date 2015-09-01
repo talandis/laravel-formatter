@@ -1,5 +1,5 @@
 ## Attention!
-This fork was made to support '@attributes' in xml, so that nodes (xml tags) could support attributes. _Any credits should go to the original author of this bundle._
+This fork was made to support encoding and '@attributes' in xml, so that nodes (xml tags) could support attributes. _Any credits should go to the original author of this bundle._
 **Use at your own risk!**
 
 Formatter Bundle

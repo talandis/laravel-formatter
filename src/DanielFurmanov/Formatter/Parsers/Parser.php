@@ -50,16 +50,17 @@ abstract class Parser {
 	 * @param   mixed        $data
 	 * @param   null         $structure
 	 * @param   null|string  $basenode
+	 * @param   null|string  $encoding
 	 * @return  string
 	 */
-	private function xmlify($data, $structure = null, $basenode = 'xml') {
+	private function xmlify($data, $structure = null, $basenode = 'xml', $encoding = 'utf-8') {
 		// turn off compatibility mode as simple xml throws a wobbly if you don't.
 		if (ini_get('zend.ze1_compatibility_mode') == 1) {
 			ini_set('zend.ze1_compatibility_mode', 0);
 		}
 
 		if ($structure == null) {
-			$structure = simplexml_load_string("<?xml version='1.0' encoding='utf-8'?><$basenode />");
+			$structure = simplexml_load_string("<?xml version='1.0' encoding='$encoding'?><$basenode />");
 		}
 
 		// Force it to be something useful
@@ -116,11 +117,12 @@ abstract class Parser {
 	 * Return an xml representation of the data stored in the parser
 	 *
 	 * @param string $baseNode
+	 * @param string $encoding
 	 *
 	 * @return string An xml string representing the encapsulated data
 	 */
-	public function toXml($baseNode = 'xml') {
-		return $this->xmlify($this->toArray(), null, $baseNode);
+	public function toXml($baseNode = 'xml', $encoding = 'utf-8') {
+		return $this->xmlify($this->toArray(), null, $baseNode, $encoding);
 	}
 
 	private function csvify($data) {
