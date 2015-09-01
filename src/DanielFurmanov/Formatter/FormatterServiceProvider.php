@@ -1,4 +1,4 @@
-<?php namespace SoapBox\Formatter;
+<?php namespace DanielFurmanov\Formatter;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,7 +20,7 @@ class FormatterServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
-		$this->package('soapbox/laravel-formatter');
+		$this->package('DanielFurmanov/laravel-formatter');
 	}
 
 	/**

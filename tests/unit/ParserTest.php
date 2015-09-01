@@ -1,6 +1,6 @@
-<?php namespace SoapBox\Formatter\Test;
+<?php namespace DanielFurmanov\Formatter\Test;
 
-use SoapBox\Formatter\Formatter;
+use DanielFurmanov\Formatter\Formatter;
 
 class ParserTest extends TestCase {
 

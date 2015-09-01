@@ -1,8 +1,8 @@
-<?php namespace SoapBox\Formatter\Parsers;
+<?php namespace DanielFurmanov\Formatter\Parsers;
 
 use Spyc;
 use Illuminate\Support\Str;
-use SoapBox\Formatter\ArrayHelpers;
+use DanielFurmanov\Formatter\ArrayHelpers;
 
 /**
  * Parser Interface

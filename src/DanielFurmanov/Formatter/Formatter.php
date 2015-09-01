@@ -1,11 +1,11 @@
-<?php namespace SoapBox\Formatter;
+<?php namespace DanielFurmanov\Formatter;
 
 use InvalidArgumentException;
-use SoapBox\Formatter\Parsers\ArrayParser;
-use SoapBox\Formatter\Parsers\CsvParser;
-use SoapBox\Formatter\Parsers\JsonParser;
-use SoapBox\Formatter\Parsers\XmlParser;
-use SoapBox\Formatter\Parsers\YamlParser;
+use DanielFurmanov\Formatter\Parsers\ArrayParser;
+use DanielFurmanov\Formatter\Parsers\CsvParser;
+use DanielFurmanov\Formatter\Parsers\JsonParser;
+use DanielFurmanov\Formatter\Parsers\XmlParser;
+use DanielFurmanov\Formatter\Parsers\YamlParser;
 
 class Formatter {
 	/**

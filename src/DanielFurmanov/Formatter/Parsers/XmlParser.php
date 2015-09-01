@@ -1,4 +1,4 @@
-<?php namespace SoapBox\Formatter\Parsers;
+<?php namespace DanielFurmanov\Formatter\Parsers;
 
 class XmlParser extends Parser {
 

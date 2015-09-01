@@ -53,7 +53,7 @@ All of the following are formats that are supported for output.
 __Including The Formatter__
 
 ```php
-use SoapBox\Formatter\Formatter;
+use DanielFurmanov\Formatter\Formatter;
 ```
 
 __Supported Types__

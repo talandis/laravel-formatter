@@ -1,4 +1,4 @@
-<?php namespace SoapBox\Formatter\Parsers;
+<?php namespace DanielFurmanov\Formatter\Parsers;
 
 use InvalidArgumentException;
 use Spyc;
