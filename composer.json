@@ -35,7 +35,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"DanielFurmanov\\Formatter": "src/"
+			"Talandis\\Formatter": "src/"
 		}
 	},
 	"minimum-stability": "dev"
