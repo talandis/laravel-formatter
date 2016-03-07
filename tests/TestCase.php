@@ -1,4 +1,4 @@
-<?php namespace DanielFurmanov\Formatter\Test;
+<?php namespace Talandis\Formatter\Test;
 
 abstract class TestCase extends \PHPUnit_Framework_TestCase {
 

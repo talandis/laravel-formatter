@@ -1,4 +1,4 @@
-<?php namespace DanielFurmanov\Formatter\Parsers;
+<?php namespace Talandis\Formatter\Parsers;
 
 use InvalidArgumentException;
 use Spyc;

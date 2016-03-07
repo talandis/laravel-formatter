@@ -1,11 +1,16 @@
 {
-	"name": "daniel-furmanov/laravel-formatter",
+	"name": "talandis/laravel-formatter",
 	"type": "library",
 	"description": "A formatting library that converts data output between XML, CSV, JSON, TXT, YAML and a few others. And supports @attributes in XML",
 	"keywords": ["laravel", "formatter", "data", "convert", "csv", "xml", "yaml"],
-    "homepage": "https://github.com/DanielFurmanov/laravel-formatter",
+    "homepage": "https://github.com/talandis/laravel-formatter",
     "license": "MIT",
 	"authors": [
+			{
+			"name": "Tomas Talandis",
+			"email": "tomas@talandis.lt",
+			"homepage": "https://github.com/talandis/"
+		},
 		{
 			"name": "Daniel Furmanov",
 			"email": "fde711@gmail.com",

@@ -1,8 +1,8 @@
-<?php namespace DanielFurmanov\Formatter\Parsers;
+<?php namespace Talandis\Formatter\Parsers;
 
 use Spyc;
 use Illuminate\Support\Str;
-use DanielFurmanov\Formatter\ArrayHelpers;
+use Talandis\Formatter\ArrayHelpers;
 
 /**
  * Parser Interface

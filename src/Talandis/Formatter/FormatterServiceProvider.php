@@ -1,4 +1,4 @@
-<?php namespace DanielFurmanov\Formatter;
+<?php namespace Talandis\Formatter;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,7 +20,7 @@ class FormatterServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
-		$this->package('daniel-furmanov/laravel-formatter');
+		$this->package('talandis/laravel-formatter');
 	}
 
 	/**

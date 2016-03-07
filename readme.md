@@ -1,5 +1,5 @@
 ## Attention!
-This fork was made to support encoding and '@attributes' in xml, so that nodes (xml tags) could support attributes. _Any credits should go to the original author of this bundle._
+This form was made to support '@attributes' together with '@value'. _Any credits should go to the original authors._
 **Use at your own risk!**
 
 Formatter Bundle
@@ -18,7 +18,7 @@ See Parsers and Formats to see supported input / output formats.
 Through command line:
 
 ```bash
-composer require daniel-furmanov/laravel-formatter
+composer require talandis/laravel-formatter
 ```
 
 Through composer.json:
@@ -26,7 +26,7 @@ Through composer.json:
 ```json
 {
   "require": {
-	"daniel-furmanov/laravel-formatter": "dev-master",
+	"talandis/laravel-formatter": "dev-master",
   }
 }
 

@@ -1,8 +1,8 @@
-<?php namespace DanielFurmanov\Formatter\Test\Parsers;
+<?php namespace Talandis\Formatter\Test\Parsers;
 
-use DanielFurmanov\Formatter\Test\TestCase;
-use DanielFurmanov\Formatter\Parsers\Parser;
-use DanielFurmanov\Formatter\Parsers\CsvParser;
+use Talandis\Formatter\Test\TestCase;
+use Talandis\Formatter\Parsers\Parser;
+use Talandis\Formatter\Parsers\CsvParser;
 
 class CsvParserTest extends TestCase {
 

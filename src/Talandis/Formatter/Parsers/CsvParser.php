@@ -1,8 +1,8 @@
-<?php namespace DanielFurmanov\Formatter\Parsers;
+<?php namespace Talandis\Formatter\Parsers;
 
 use InvalidArgumentException;
 use League\Csv\Reader;
-use DanielFurmanov\Formatter\ArrayHelpers;
+use Talandis\Formatter\ArrayHelpers;
 
 class CsvParser extends Parser {
 

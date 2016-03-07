@@ -1,6 +1,6 @@
-<?php namespace DanielFurmanov\Formatter\Test;
+<?php namespace Talandis\Formatter\Test;
 
-use DanielFurmanov\Formatter\Formatter;
+use Talandis\Formatter\Formatter;
 
 class ParserTest extends TestCase {
 

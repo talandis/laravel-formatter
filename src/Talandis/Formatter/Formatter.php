@@ -1,11 +1,11 @@
-<?php namespace DanielFurmanov\Formatter;
+<?php namespace Talandis\Formatter;
 
 use InvalidArgumentException;
-use DanielFurmanov\Formatter\Parsers\ArrayParser;
-use DanielFurmanov\Formatter\Parsers\CsvParser;
-use DanielFurmanov\Formatter\Parsers\JsonParser;
-use DanielFurmanov\Formatter\Parsers\XmlParser;
-use DanielFurmanov\Formatter\Parsers\YamlParser;
+use Talandis\Formatter\Parsers\ArrayParser;
+use Talandis\Formatter\Parsers\CsvParser;
+use Talandis\Formatter\Parsers\JsonParser;
+use Talandis\Formatter\Parsers\XmlParser;
+use Talandis\Formatter\Parsers\YamlParser;
 
 class Formatter {
 	/**

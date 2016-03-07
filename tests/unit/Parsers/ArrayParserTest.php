@@ -1,9 +1,9 @@
-<?php namespace DanielFurmanov\Formatter\Test\Parsers;
+<?php namespace Talandis\Formatter\Test\Parsers;
 
 use stdClass;
-use DanielFurmanov\Formatter\Test\TestCase;
-use DanielFurmanov\Formatter\Parsers\Parser;
-use DanielFurmanov\Formatter\Parsers\ArrayParser;
+use Talandis\Formatter\Test\TestCase;
+use Talandis\Formatter\Parsers\Parser;
+use Talandis\Formatter\Parsers\ArrayParser;
 
 class ArrayParserTest extends TestCase {
 

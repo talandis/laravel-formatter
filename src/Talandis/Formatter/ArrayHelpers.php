@@ -1,4 +1,4 @@
-<?php namespace DanielFurmanov\Formatter;
+<?php namespace Talandis\Formatter;
 
 use Illuminate\Support\Arr;
 
