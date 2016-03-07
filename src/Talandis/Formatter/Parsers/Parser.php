@@ -74,8 +74,9 @@ abstract class Parser {
 				foreach ($data[$key] as $attrName => $attrValue) {
 					$structure->addAttribute($attrName, $attrValue);
 				}
-			}
-			else {
+			} elseif ($key === '@value') {
+				// Skip item with @value name
+			} else {
 				// convert our booleans to 0/1 integer values so they are
 				// not converted to blanks.
 				if (is_bool($value)) {
@@ -93,7 +94,8 @@ abstract class Parser {
 
 				// if there is another array found recrusively call this function
 				if (is_array($value) or is_object($value)) {
-					$node = $structure->addChild($key);
+					// Set element value if element has @value attribute
+					$node = $structure->addChild($key, isset( $value['@value'] ) ? $value['@value'] : null );
 
 					// recursive call if value is not empty
 					if ( ! empty($value)) {
