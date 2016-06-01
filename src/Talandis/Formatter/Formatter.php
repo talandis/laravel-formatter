@@ -75,7 +75,7 @@ class Formatter {
 		return $this->parser->toXml($baseNode, $encoding);
 	}
 
-	public function toCsv() {
-		return $this->parser->toCsv();
+	public function toCsv( $newline = "\n", $delimiter = ",", $enclosure = '"', $escape = "\\" ) {
+		return $this->parser->toCsv( $newline, $delimiter, $enclosure, $escape );
 	}
 }
